@@ -4322,7 +4322,11 @@ section#footer {
 	#bastion-terminal {
 		position: absolute;
 		left: 48vw;
-		top: 58em;
+		top: 52em;
 		width: 40%;
+	}
+
+	#bastion-images {
+		padding-bottom: 3em;
 	}
 }
