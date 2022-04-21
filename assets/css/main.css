@@ -4064,6 +4064,7 @@ canvas {
 
 			.wrapper.spotlight .inner {
 				display: block;
+				text-align: center;
 			}
 
 			.wrapper.spotlight .image {
@@ -4291,7 +4292,7 @@ section#footer {
 }
 
 #three, #four {
-	padding: 0 4em;
+	padding: 0;
 }
 
 #two:after, #three:after, #four:after,
@@ -4322,11 +4323,28 @@ section#footer {
 	#bastion-terminal {
 		position: absolute;
 		left: 48vw;
-		top: 52em;
+		top: 58em;
 		width: 40%;
 	}
 
 	#bastion-images {
 		padding-bottom: 3em;
+	}
+
+	#projects-header {
+		font-size: 1.5em;
+		margin-bottom: 1em;
+	}
+
+	.wrapper.spotlight:nth-child(2n - 1) .inner {
+		text-align: center;
+	}
+
+	.bastion-link {
+		margin: 0.25em 0;;
+	}
+
+	.wrapper.spotlight .inner .image {
+		width: 18em;
 	}
 }
