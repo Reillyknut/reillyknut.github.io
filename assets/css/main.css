@@ -82,6 +82,10 @@ input, select, textarea {
 		-ms-overflow-style: scrollbar;
 	}
 
+	body, html {
+		overflow-x:hidden;
+	}
+
 	@media screen and (max-width: 480px) {
 
 		html, body {
@@ -3527,7 +3531,7 @@ canvas {
 		@media screen and (max-width: 1280px) {
 
 			#banner {
-				padding: 7em 0 8.25em 0 ;
+				padding: 2em 0 14em 0 ;
 				background-color: #2e3141;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
 				background-size: auto,
@@ -3555,7 +3559,7 @@ canvas {
 		@media screen and (max-width: 736px) {
 
 			#banner {
-				padding: 5em 2em 4.25em 2em ;
+				padding: 5em 2em 6.5em 2em ;
 				margin-bottom: -2.5em;
 			}
 
@@ -4053,6 +4057,10 @@ canvas {
 		}
 
 		@media screen and (max-width: 480px) {
+
+			section#one {
+				padding: 0;
+			}
 
 			.wrapper.spotlight .inner {
 				display: block;
