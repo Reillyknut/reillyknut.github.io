@@ -103,7 +103,7 @@ input, select, textarea {
 	}
 
 	body {
-		background-color: #2e3141;
+		background-color: #004D7B;
 		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8));
 		background-size: auto,
  cover;
@@ -2273,7 +2273,7 @@ canvas {
 
 		select option {
 			color: #ffffff;
-			background: #2e3141;
+			background: #004D7B;
 		}
 
 		select:focus::-ms-value {
@@ -2361,7 +2361,7 @@ canvas {
 			background: #ffffff;
 			border-color: #ffffff;
 			content: '\f00c';
-			color: #2e3141;
+			color: #004D7B;
 		}
 
 		input[type="checkbox"]:focus + label:before,
@@ -3532,7 +3532,7 @@ canvas {
 
 			#banner {
 				padding: 2em 0 14em 0 ;
-				background-color: #2e3141;
+				background-color: #004D7B;
 				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8));
 				background-size: auto,
  cover;
@@ -3644,7 +3644,7 @@ canvas {
 
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
-			background-color: #2e3141;
+			background-color: #004D7B;
 			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8));
 			background-size: auto,
  cover;
@@ -3692,7 +3692,7 @@ canvas {
 	}
 
 	.wrapper {
-		background-color: #2e3141;
+		background-color: #004D7B;
 		/* margin: 6.5em 0; */
 		margin: 0;
 		/* padding: 6.5em 0; */
@@ -3708,7 +3708,7 @@ canvas {
 		} */
 
 		.wrapper:before {
-			box-shadow: inset 0 -1px 0 0 #2e3141, 0 1px 0 0 #2e3141;
+			box-shadow: inset 0 -1px 0 0 #004D7B, 0 1px 0 0 #004D7B;
 		}
 
 		/* .wrapper:after {
@@ -4167,7 +4167,7 @@ canvas {
 	@media screen and (max-width: 1280px) {
 
 		#footer {
-			background-color: #2e3141;
+			background-color: #004D7B;
 			/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)); */
 			background-size: auto,
  cover;
