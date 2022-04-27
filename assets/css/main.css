@@ -104,7 +104,7 @@ input, select, textarea {
 
 	body {
 		background-color: #2e3141;
-		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+		background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8));
 		background-size: auto,
  cover;
 		background-attachment: fixed,
@@ -3533,7 +3533,7 @@ canvas {
 			#banner {
 				padding: 2em 0 14em 0 ;
 				background-color: #2e3141;
-				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+				background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8));
 				background-size: auto,
  cover;
 				background-position: center,
@@ -3645,7 +3645,7 @@ canvas {
 		#wrapper > header {
 			padding: 9em 0 6.25em 0 ;
 			background-color: #2e3141;
-			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg");
+			background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8));
 			background-size: auto,
  cover;
 			background-position: center,
@@ -3695,7 +3695,7 @@ canvas {
 		background-color: #2e3141;
 		/* margin: 6.5em 0; */
 		margin: 0;
-		padding: 6.5em 0;
+		/* padding: 6.5em 0; */
 		position: relative;
 	}
 
@@ -4016,7 +4016,26 @@ canvas {
 		}
 
 		@media screen and (max-width: 736px) {
+			section#one {
+				padding: 0;
+			}
 
+			.wrapper.spotlight .inner {
+				display: block;
+				text-align: center;
+			}
+
+			.wrapper.spotlight .image {
+				margin: 0 0 1em 0 !important;
+				max-width: 85%;
+				width: 12em;
+			}
+
+			.wrapper.spotlight:nth-child(2n - 1)
+			.inner {
+				text-align: center;
+			}
+	
 			/* .wrapper {
 				margin: 2.5em 0;
 			} */
@@ -4149,7 +4168,7 @@ canvas {
 
 		#footer {
 			background-color: #2e3141;
-			/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)), url("../../images/bg.jpg"); */
+			/* background-image: linear-gradient(to top, rgba(46, 49, 65, 0.8), rgba(46, 49, 65, 0.8)); */
 			background-size: auto,
  cover;
 			background-position: center,
@@ -4272,12 +4291,16 @@ section#footer {
 	box-shadow: 5px 10px 8px #888888;
 	position: absolute;
 	left: 56vw;
-	top: 55em;
+	top: 50em;
 	width: 30vw;
 }
 
 .image-shadow {
 	box-shadow: 6px 8px 10px #202020;
+}
+
+.wrapper.spotlight .image.mellow {
+	width: 60em;
 }
 
 #projects-header {
@@ -4288,7 +4311,7 @@ section#footer {
 }
 
 #two {
-	padding: 1em 0 4em 0;
+	padding: 1em 0 0 0;
 }
 
 #three, #four {
@@ -4300,6 +4323,133 @@ section#footer {
 	height: 0;
 }
 
+#infra-diagrams {
+	margin-top: 5em;
+	text-align: center;
+}
+
+#infra-diagrams span img {
+	width: 100%;
+}
+
+/* Slideshow */
+
+.slideshow-background {
+	background-color: rgb(248, 248, 248);
+	margin-top: 160px;
+	padding: 5px;
+	width: 100%;
+	z-index: 1;
+}
+
+.slideshow-container {
+  max-width: 58em;
+  position: relative;
+  margin: 2em auto;
+	padding: 2em 0 6em 0;
+	background-color: #fff;
+	border-radius: 5px;
+	z-index: 2;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+	height: 35vw;
+	text-align: center;
+}
+
+.mySlides.overview img {
+	height: 34vw;
+}
+
+.mySlides.infra img {
+	height: 30vw;
+}
+
+.mySlides.ccf img {
+	height: 36vw;
+}
+
+.mySlides.overview {
+	padding: 0 2em 0 0;
+}
+
+.mySlides.infra {
+	padding: 0 0 2em 0;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.6);
+	color: #fff;
+}
+
+/* Caption text */
+.text {
+  color: #555;
+  font-size: 15px;
+	font-weight: bold;
+  padding: 8px 10em;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #888;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dots {
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Media Queries */
 @media screen and (max-width: 1100px) {
 	#bastion-dashboard {
 		width: 80vw;
@@ -4312,14 +4462,50 @@ section#footer {
 	}
 }
 
-@media screen and (max-width: 530px) {	
-	#bastion-terminal {
-		left: 48vw;
-		top: 52em;
+@media screen and (max-width: 800px) {
+	.text {
+		font-size: 12px;
+	}
+
+	.slideshow-container {
+		padding: 2em 0 9em 0;
+	}
+
+	.mySlides.overview img {
+		height: 44vw;
+	}
+	
+	.mySlides.infra img {
+		height: 40vw;
+	}
+
+	.mySlides.ccf img {
+		height: 46vw;
 	}
 }
 
-@media screen and (max-width: 480px) {	
+@media screen and (max-width: 736px) {
+	#bastion-terminal {
+		left: 48vw;
+		top: 56em;
+	}
+
+	.slideshow-background {
+		margin-top: 60px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.text {
+		padding: 8px 2em;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.text {
+		font-size: 10px;
+	}
+
 	#bastion-terminal {
 		position: absolute;
 		left: 48vw;
@@ -4346,5 +4532,9 @@ section#footer {
 
 	.wrapper.spotlight .inner .image {
 		width: 18em;
+	}
+
+	.slideshow-background {
+		margin-top: 20px;
 	}
 }

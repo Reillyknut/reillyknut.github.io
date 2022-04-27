@@ -39,10 +39,10 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
         <h2>Reilly Knutson</h2>
         <section id="bastion-intro">
           <p>
-            I'm a fullstack software engineer based in Boston, Massachusetts with experience in JavaScript/Node.js, Ruby, PostgreSQL, AWS, Docker, and React.
+            I'm a full stack software engineer based in Boston, Massachusetts with experience in JavaScript/Node.js, Ruby, PostgreSQL, AWS, Docker, and React.
           </p>
           <p>
-            I recently built <a href="https://bastion-baas.github.io/" class="bastion-link">Bastion</a>, an open-source Backend-as-a-Service that gets deployed to the cloud with AWS.
+            I recently built <a href="https://bastion-baas.github.io/" class="bastion-link" target="_blank">Bastion</a>, an open-source Backend-as-a-Service that gets deployed to the cloud with AWS.
           </p>
         </section>
       </div>
@@ -72,6 +72,46 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
           <div><img src="images/dashboard.png" alt="" id="bastion-dashboard" /></div>
           <div><img src="images/terminal.png" alt="" id="bastion-terminal" /></div>
         </div>
+
+        <div class="slideshow-background">
+          <div class="slideshow-container">
+            <div class="mySlides overview">
+              <img src="images/bastion_components.png">
+              <div class="text">
+                Through Bastion's CLI and Admin Dashboard, you can quickly and easily deploy your backend
+                for your frontend application while maintaining control of the code and infrastructure.
+              </div>
+            </div>
+          
+            <div class="mySlides infra">
+              <img src="images/infra_main_components.png">
+              <div class="text">
+                Bastion abstracts away complicated provisioning and management of cloud services in AWS,
+                saving significant time and effort.
+              </div>
+            </div>
+
+            <div class="mySlides ccf">
+              <img src="images/ccf.gif">
+              <div class="text">
+                Cloud code functions allow developers to easily integrate their applications with 3rd-party APIs
+                without having to touch their backend code or expose API keys in their frontend.
+              </div>
+            </div>
+        
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+          <div class="dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+        </div>
+
+
+
       </section>
     </section>
 
@@ -79,7 +119,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
       <section id="two" class="wrapper alt spotlight style2">
         <h2 id="projects-header">Other Projects</h2>
         <div class="inner">
-          <span class="image"><img src="images/Mellow.png" alt="" class="image-shadow"/></span>
+          <span class="image mellow"><img src="images/Mellow.png" alt="" class="image-shadow"/></span>
           <div class="content">
             <h2 class="major">Mellow</h2>
             <p>
@@ -141,6 +181,7 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
     <script src="assets/js/breakpoints.min.js"></script>
     <script src="assets/js/util.js"></script>
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/slideshow.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.waves.min.js"></script>
